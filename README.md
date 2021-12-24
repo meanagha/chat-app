@@ -57,3 +57,13 @@ This repository contains beginner level code and might contain some things I wis
 <br/><br/>
 
 Cheers 💻 🍺 🔥 🙌
+
+
+
+====================================================== MY NOTES ===============================================
+
+1. npm run start dev = "concurrently" concept comes into picture
+To run frontend and backend at the same time we use,concurrently in nodejs.So no need to use sepret commands to run project individually.
+We can use only one command.
+
+2.
