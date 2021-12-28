@@ -27,7 +27,7 @@ export function useLogin() {
         };
 
         return fetch(
-            `${process.env.REACT_APP_API_URL}/api/users/login`,
+            `${process.env.REACT_APP_API_URL}/users/login`,
             requestOptions
         )
             .then(handleResponse)
@@ -58,7 +58,7 @@ export function useRegister() {
         };
 
         return fetch(
-            `${process.env.REACT_APP_API_URL}/api/users/register`,
+            `${process.env.REACT_APP_API_URL}/users/register`,
             requestOptions
         )
             .then(handleResponse)
