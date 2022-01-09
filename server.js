@@ -25,9 +25,15 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-
-// CORS middleware
-app.use(cors());
+const corsOptions = {
+  origin : "https://welcomesite.info",
+  credentials: true,
+  "allowedHeaders": ["sessionId", "Content-Type"],
+  "exposedHeaders": ["sessionId"],
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false
+}
+app.use(cors(corsOptions));
 
 // Database configuration
 const db = require("./config/keys").mongoURI;
