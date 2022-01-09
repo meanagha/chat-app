@@ -22,12 +22,7 @@ export function useLogin() {
     const login = (username, password) => {
         const requestOptions = {
             method: 'POST',
-            headers: { 
-                'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
-                'Access-Control-Allow-Origin' : '*',
-             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
-             'Access-Control-Allow-Credentials' : true
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password }),
         };
         alert(`${process.env.REACT_APP_API_URL}`)
