@@ -27,8 +27,9 @@ app.use(
 app.use(bodyParser.json());
 
 // CORS middleware
-app.use(cors());
-
+app.use(cors({
+  origin: '*'
+}));
 // Database configuration
 const db = require("./config/keys").mongoURI;
 
