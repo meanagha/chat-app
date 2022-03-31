@@ -157,6 +157,7 @@ router.get('/conversations/query', (req, res) => {
 
 // Post private message
 router.post('/', (req, res) => {
+    console.log("POST MESS")
     let from = mongoose.Types.ObjectId(jwtUser.id);
     let to = mongoose.Types.ObjectId(req.body.to);
 
